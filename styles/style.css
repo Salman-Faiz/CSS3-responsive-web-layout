@@ -31,11 +31,13 @@ color: burlywood;
 .image-controller-1{
     position: relative;
     top: 100px;
-    left: 0px;
+    left: 900px;
 }
 .image-controller-2{
     position: absolute;
     bottom: 0;
+    color: brown;
+    background-color: aliceblue;
 }
 .image-controller-3{
     width: 200px;
@@ -52,8 +54,8 @@ color: burlywood;
 }
 .image-controller-5{
     position: absolute;
-    left: 350px;
-    top: 200px;
+    left: 300px;
+    top: 250px;
     z-index: 5;
     /* z-index value positive means image is viewing over the other objects */
   }
