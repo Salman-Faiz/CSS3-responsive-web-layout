@@ -58,5 +58,46 @@ color: burlywood;
     /* z-index value positive means image is viewing over the other objects */
   }
 
+  /* stack overflow section */
+  .stack-1{
+    width: 600px;
+    height: 500px;
+    border:5px solid lightcoral ;
+  }
+.stack-2{
+    width: 200px;
+    height: 300px;
+    border: 5px solid orange;
+    color:olivedrab;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+  .stack-controller{
+    display: flex;
+    gap: 30px;
+  }
+  .stack-3{
+    white-space: nowrap;
+    background-color: cadetblue;
+  }
+  .tooltip{
+    border: 1px solid red;
+    color: blue;
+    width: 200px;
+    height: 50px;
+   white-space: nowrap;
+        /* overflow: hidden; */
+        text-overflow: ellipsis;
+    }
+  
+  .tooltip .tooltiptext{
+    visibility: hidden;
+  }
+  .tooltip:hover .tooltiptext{
+visibility: visible;
+  }
+  
+
 
         
