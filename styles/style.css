@@ -1,0 +1,15 @@
+ header .ccs3-controler{
+    display: inline;
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    font-size: 30px;
+    
+}
+header a{
+    text-decoration: none;
+}
+header a:hover{
+color: burlywood;
+}
+
