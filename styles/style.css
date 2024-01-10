@@ -204,6 +204,7 @@
    width: 50px;
    border-radius: 50%;
    background-color: red;
+   color: var(--primary-color);
    text-align: center;
    padding: 7px;
    position: relative;
@@ -256,5 +257,14 @@
   left:1000px;
  }
 }
+/* custom variable */
 
+:root{
+  --primary-color:lightgreen;
+}
  
+/* specificity */
+
+#ul-color{
+  background-color: red !important;
+}
