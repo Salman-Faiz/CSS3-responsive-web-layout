@@ -1,165 +1,260 @@
- header .ccs3-controler{
-    display: inline;
-    list-style: none;
-    display: flex;
-    gap: 24px;
-    font-size: 30px;
-    
-}
-header a{
-    text-decoration: none;
-}
-header a:hover{
-color: burlywood;
-}
-.ccs3-controler li:nth-child(2n) {
-        background: lightgreen;
-      }
-.ccs3-controler li:nth-child(2n+1) {
-        background:lightcoral;
-      }
-.ccs3-controler li:last-child {
-        background:olivedrab;
-      }
+ header .ccs3-controler {
+   display: inline;
+   list-style: none;
+   display: flex;
+   gap: 24px;
+   font-size: 30px;
 
-/* image-positioning section*/
+ }
 
-.image-positioning{
-    display: flex;
-    gap: 15px;
-}
-.image-controller-1{
-    position: relative;
-    top: 100px;
-    left: 900px;
-}
-.image-controller-2{
-    position: absolute;
-    bottom: 0;
-    color: brown;
-    background-color: aliceblue;
-}
-.image-controller-3{
-    width: 200px;
-    height: 2000px;
-}
-.image-controller-3 #image-3{
-    position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        width: 200px;
-}
-.image-controller-4{
-    position: fixed;
-}
-.image-controller-5{
-    position: absolute;
-    left: 300px;
-    top: 250px;
-    z-index: 5;
-    /* z-index value positive means image is viewing over the other objects */
-  }
+ header a {
+   text-decoration: none;
+ }
 
-  /* stack overflow section */
-  .stack-1{
-    width: 600px;
-    height: 500px;
-    border:5px solid lightcoral ;
-  }
-.stack-2{
-    width: 200px;
-    height: 300px;
-    border: 5px solid orange;
-    color:olivedrab;
-    overflow: scroll;
-    overflow-x: hidden;
-    overflow-wrap: break-word;
-}
-  .stack-controller{
-    display: flex;
-    gap: 30px;
-  }
-  .stack-3{
-    white-space: nowrap;
-    background-color: cadetblue;
-  }
-  .tooltip{
-    border: 1px solid red;
-    color: blue;
-    width: 200px;
-    height: 50px;
+ header a:hover {
+   color: burlywood;
+ }
+
+ .ccs3-controler li:nth-child(2n) {
+   background: lightgreen;
+ }
+
+ .ccs3-controler li:nth-child(2n+1) {
+   background: lightcoral;
+ }
+
+ .ccs3-controler li:last-child {
+   background: olivedrab;
+ }
+
+ /* image-positioning section*/
+
+ .image-positioning {
+   display: flex;
+   gap: 15px;
+ }
+
+ .image-controller-1 {
+   position: relative;
+   top: 100px;
+   left: 900px;
+ }
+
+ .image-controller-2 {
+   position: absolute;
+   bottom: 0;
+   color: brown;
+   background-color: aliceblue;
+ }
+
+ .image-controller-3 {
+   width: 200px;
+   height: 2000px;
+ }
+
+ .image-controller-3 #image-3 {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   width: 200px;
+ }
+
+ .image-controller-4 {
+   position: fixed;
+ }
+
+ .image-controller-5 {
+   position: absolute;
+   left: 300px;
+   top: 250px;
+   z-index: 5;
+   /* z-index value positive means image is viewing over the other objects */
+ }
+
+ /* stack overflow section */
+ .stack-1 {
+   width: 600px;
+   height: 500px;
+   border: 5px solid lightcoral;
+ }
+
+ .stack-2 {
+   width: 200px;
+   height: 300px;
+   border: 5px solid orange;
+   color: olivedrab;
+   overflow: scroll;
+   overflow-x: hidden;
+   overflow-wrap: break-word;
+ }
+
+ .stack-controller {
+   display: flex;
+   gap: 30px;
+ }
+
+ .stack-3 {
    white-space: nowrap;
-        /* overflow: hidden; */
-        text-overflow: ellipsis;
-    }
-  
-  .tooltip .tooltiptext{
-    visibility: hidden;
-  }
-  .tooltip:hover .tooltiptext{
-visibility: visible;
-  }
+   background-color: cadetblue;
+ }
 
-  /*transformers-transition section  */
+ .tooltip {
+   border: 1px solid red;
+   color: blue;
+   width: 200px;
+   height: 50px;
+   white-space: nowrap;
+   /* overflow: hidden; */
+   text-overflow: ellipsis;
+ }
 
-.image-1 ,.image-2, .image-3, .image-4{
+ .tooltip .tooltiptext {
+   visibility: hidden;
+ }
 
-  width: 300px;
-  height: 200px;
-  border: 2px solid red;
-  transition: height 2s, height 4s;
+ .tooltip:hover .tooltiptext {
+   visibility: visible;
+ }
+
+ /*transformers-transition section  */
+
+ .image-1,
+ .image-2,
+ .image-3,
+ .image-4 {
+
+   width: 300px;
+   height: 200px;
+   border: 2px solid red;
+   transition: height 2s, height 4s;
+ }
+
+ .transformer-controller {
+   display: flex;
+   gap: 50px;
+
+ }
+
+ .image-1-div,
+ .image-2-div,
+ .image-3-div,
+ .image-4-div {
+
+   width: 300px;
+   height: 200px;
+   background-color: lightgreen;
+   transition: transform 3s ease-in-out 1s;
+
+
+ }
+
+ .image-1:hover {
+   transform: scale(1.5);
+   transition: transform 2s, height 4s;
+
+ }
+
+ .image-2:hover {
+   /* transform: translate(50px 50px); */
+   transform: skew(20deg, 10deg);
+   transition: transform 2s, height 4s;
+
+
+ }
+
+ .image-3:hover {
+   transform: rotate(1000000deg);
+   transition: transform 10s;
+
+ }
+
+ .image-4:hover {
+   transform: skew(30deg, 20deg);
+   transition: transform 2s, height 4s;
+
+
+ }
+
+ /* transition1 section */
+
+ .transition1 {
+   width: 300px;
+   height: 200px;
+   background-color: red;
+   transition: width 2s, height 4s;
+ }
+
+ .transition1:hover {
+   width: 500px;
+   height: 400px;
+   background-color: greenyellow;
+ }
+
+ /* Css animation */
+
+ .css-animation {
+   width: 1100px;
+   height: 435px;
+   border: 4px solid navy;
+   
+ }
+
+.ball {
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   background-color: red;
+   text-align: center;
+   padding: 7px;
+   position: relative;
+   animation: bounch 8s ease-in-out 0.1s infinite alternate ;
+   animation-play-state: running;
+ }
+ @keyframes bounch {
+ 0%{
+  top:0px;
+  left:0px;
+ }
+ 10%{
+  top:350px;
+  left:100px;
+ }
+ 20%{
+  top:0px;
+  left:200px;
+ }
+ 30%{
+  top:350px;
+  left:300px;
+ }
+ 40%{
+  top:0px;
+  left:400px;
+ }
+ 50%{
+  top:350px;
+  left:500px;
+ }
+ 60%{
+  top:0px;
+  left:600px;
+ }
+70%{
+  top:350px;
+  left:700px;
+ }
+ 80%{
+  top:0px;
+  left:800px;
+ }
+ 90%{
+  top:350px;
+  left:900px;
+ }
+ 100%{
+  top:0px;
+  left:1000px;
+ }
 }
-.transformer-controller{
-  display: flex;
-  gap: 50px;
-  
-}
-.image-1-div,.image-2-div,.image-3-div,.image-4-div{
-  
-  width: 300px;
-  height: 200px;
-  background-color: lightgreen;
-  transition: transform 3s ease-in-out 1s;
 
-  
-}
-.image-1:hover{
-  transform:scale(1.5);
-  transition: transform 2s, height 4s;
  
-}
-.image-2:hover{
- /* transform: translate(50px 50px); */
- transform: skew(20deg, 10deg);
- transition: transform 2s, height 4s;
-
-  
-}
-.image-3:hover{
-  transform: rotate(1000000deg);
-  transition: transform 10s;
-  
-}
-.image-4:hover{
-  transform: skew(30deg, 20deg);
-  transition: transform 2s, height 4s;
-  
- 
-}
-/* transition1 section */
-
-.transition1{
-  width: 300px;
-  height: 200px;
-  background-color: red;
-  transition: width 2s, height 4s;
-}
-.transition1:hover{
-  width: 500px;
-  height: 400px;
-  background-color: greenyellow;
-}
-
-
-
-        
