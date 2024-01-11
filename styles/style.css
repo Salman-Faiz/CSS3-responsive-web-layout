@@ -268,3 +268,13 @@
 #ul-color{
   background-color: red !important;
 }
+
+/* flexbox grid media query */
+
+.photo-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content:center;
+  align-items: center;
+}
