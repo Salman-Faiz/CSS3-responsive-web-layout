@@ -272,13 +272,10 @@
 /* flexbox grid media query */
 
 .photo-container{
-  display: flex;
-  gap: 15px;
-  justify-content:center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
 }
-
-.dragon{
-  width: 300px;
-  height: 200px;
+.demophoto{
+  width: 400px;
+  height: auto;
 }
