@@ -274,8 +274,20 @@
 .photo-container{
   display: grid;
   grid-template-columns: repeat(5,1fr);
+  justify-items:end;
 }
-.demophoto{
+.demoPhoto{
   width: 400px;
   height: auto;
+  border: 3px solid peru;
+ 
+}
+.item-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1em);
+  padding-top: 100px;
+}
+.item{
+  border: 1px solid skyblue;
 }
