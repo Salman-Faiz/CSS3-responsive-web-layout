@@ -273,18 +273,45 @@
 
 @media screen and (max-width:576px) {
   
+  .photo-container{
+    background-color: chartreuse;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+  }
 }
+
+@media screen and (min-width:577px) and (max-width:992px) {
+  
+  .photo-container{
+    background-color: rosybrown;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+  }
+}
+
+@media screen and (min-width:993px) and (max-width:1900px) {
+  
+  .photo-container{
+    background-color: forestgreen;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(,1fr);
+  }
+}
+
 
 .photo-container{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   
 }
+
 .demoPhoto{
-  width: 400px;
-  height: auto;
+
   border: 3px solid lightcoral;
  
+}
+.demoPhoto img{
+  width: 100%;
 }
 .item-container{
   display: grid;
