@@ -271,23 +271,33 @@
 
 /* flexbox grid media query */
 
+@media screen and (max-width:576px) {
+  
+}
+
 .photo-container{
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  justify-items:end;
+  grid-template-columns: repeat(4,1fr);
+  
 }
 .demoPhoto{
   width: 400px;
   height: auto;
-  border: 3px solid peru;
+  border: 3px solid lightcoral;
  
 }
 .item-container{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,1em);
+  row-gap: 15px;
+  column-gap: 15px;
+  grid-template-columns: repeat(3,200px);
+  justify-content:center ;
+  align-items: center;
+ 
   padding-top: 100px;
 }
 .item{
-  border: 1px solid skyblue;
+  border: 2px solid skyblue;
+  font-size: 1.5em;
+  text-align: center;
 }
