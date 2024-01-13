@@ -331,3 +331,10 @@
 
 /* responsive images respect to screen size */
 
+.container{
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  row-gap: 30px;
+  justify-content:space-between;
+  
+}
