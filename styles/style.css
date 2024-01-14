@@ -365,3 +365,28 @@
   }
   
 }
+
+/* Colorful  responsive images  */
+
+.first-row img{
+  width: 1800px;
+  height: 700px;
+margin: 0px 50px;
+}
+.second-row{
+  display: flex;
+  margin: 0 50px;
+  gap:5px;
+}
+.second-row > div{
+  flex: 1;
+}
+.second-row img{
+  
+  width: 596.5px;
+  height: 400px;
+}
+.second-row-column-3 img{
+  width: 596.5px;
+  height:197.5px;
+}
