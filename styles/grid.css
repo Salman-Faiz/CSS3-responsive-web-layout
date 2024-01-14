@@ -24,21 +24,51 @@
 /* define grid area */
 .header{
     grid-area: header;
+    background-color: blueviolet;
 }
 .nav{
     grid-area: nav;
-
+    background-color:peachpuff;
 }
 .main{
     grid-area: main;
+    background-color:peru;
 }
 .aside{
     grid-area: aside;
+    background-color: lightblue;
 }
 .advertising{
     grid-area: advertising;
+    background-color: blue;
 
 }
 .footer{
     grid-area: footer;
+    background-color:gray;
+}
+/* grid layout area style */
+.grid-layout-container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-areas: 
+    "header header header header"
+    "nav    main   main  aside"
+    "nav    main   main  advertising"
+    "footer footer footer footer" ;
+}
+
+@media screen and (max-width:576px) {
+ .grid-layout-container{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "advertising"
+    "footer"
+    ;
+ }   
 }
